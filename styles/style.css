@@ -1,4 +1,53 @@
+* {
+  margin: 0;
+}
+
 body {
   background: white;
   font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* header styling */
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1em;
+}
+
+header nav ul li img {
+  width: 4em;
+  height: auto;
+}
+
+/* pic of my cats */
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main section.catpic img {
+  width: 20%;
+} */
+
+#map {
+  height: 600px;
+  width: 800px;
 }

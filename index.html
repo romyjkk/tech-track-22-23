@@ -3,17 +3,45 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <link rel="icon" type="image" href="./images/caticon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Tech-track Boilerplate App</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 </head>
 
+<header>
+  <nav>
+    <ul>
+      <li>
+        <h1>Cat Map!</h1>
+      </li>
+
+      <li><img src="./images/cartooncat.webp" alt="Cartoon kitty"></li>
+    </ul>
+  </nav>
+</header>
+
 <body>
-  <h1>Tech Track boilerplate</h1>
+  <main>
 
-  <img src="./images/tt.png" alt="Tech Track logo" />
+    <section>
+      <!-- <img src="./images/kitties.png" alt="My cats" /> -->
+      <div id="map"></div>
+    </section>
 
+
+
+
+  </main>
   <script type="module" src="./scripts/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 </body>
 
 </html>
