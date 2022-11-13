@@ -23,11 +23,21 @@ img {
 
 /* header styling */
 
+header {
+  background-color: #fdcbd2;
+}
+
 header nav ul {
   display: flex;
   justify-content: space-between;
 
-  margin: 1em;
+  padding: 1em;
+  margin: 0 0 1.7em 0;
+}
+
+header nav ul li h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px#bfadb0;
 }
 
 header nav ul li img {
@@ -49,5 +59,5 @@ main section {
 
 #map {
   height: 600px;
-  width: 800px;
+  width: 1000px;
 }

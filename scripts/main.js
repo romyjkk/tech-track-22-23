@@ -1,3 +1,18 @@
+// variables
+
+const meow = new Audio('sound/meow.mp3');
+const playMeow = document.querySelector('header nav ul li img');
+
+// meow sound on cartoon cat
+
+playMeow.addEventListener('mouseover', function() {
+    meow.play();
+})
+
+playMeow.addEventListener('mouseleave', function() {
+    meow.pause();
+})
+
 // Our bundler automatically creates styling when imported in the main JS file!
 import '../styles/style.css'
 
@@ -14,8 +29,29 @@ console.log(myJson);
 
 // test map
 
-var map = L.map('map').setView([51.505, -0.09], 13);
+const map = L.map('map').setView([52.377956, 4.897070], 2);
+
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
+    minZoom: 2,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+// popup
+
+// let marker = L.marker([9.005401, 38.763611]).addTo(map);
+
+// let popup = L.popup()
+//     .setLatLng([9.005401, 38.763611])
+//     .setContent("The Abyssinian, Ethiopia")
+//     .openOn(map);
+
+let abyssinianIcon = L.icon({
+    iconUrl: '../images/png/abyssinian.png',
+
+    iconSize: [60, 62],
+    iconAnchor:   [5, 40],
+    popupAnchor:  [-2, -76]
+})
+
+L.marker([9.005401, 38.763611], {icon:abyssinianIcon}).addTo(map).bindPopup("The Abyssinian"); 
