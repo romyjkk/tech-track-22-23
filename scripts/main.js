@@ -40,16 +40,46 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // geoJSON
 
-var geojsonFeature = {
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [-104.99404, 39.75621]
-    }
-};
+var myCoords = [{
+    "type": "Point",
+    "coordinates": [38.763611, 9.005401]
+}, {
+    "type": "Point",
+    "coordinates": [-0.118092, 51.509865]
+}, {
+    "type": "Point",
+    "coordinates": [105.3809, 62.2270]
+}, {
+    "type": "Point",
+    "coordinates": [-98.000000, 38.500000]
+}, {
+    "type": "Point",
+    "coordinates": [100.9925, 15.8700]
+}, {
+    "type": "Point",
+    "coordinates": [53.6880, 32.4279]
+}];
+
+var myLayer = L.geoJSON(myCoords).addTo(map);
+myLayer.addData(geojsonFeature);
+
+
+// custom marker
+
+// const geojsonMarkerOptions = {
+//     radius: 8,
+//     fillColor: "#ff7800",
+//     color: "#000",
+//     weight: 1,
+//     opacity: 1,
+//     fillOpacity: 0.8
+// }
+
+// L.geoJSON(geojsonFeature, {
+//     pointToLayer: function (myCoords, latlng) {
+//         return L.circleMarker(latlng, geojsonMarkerOptions);
+//     }
+// }).addTo(map);
 
 // icons
 
