@@ -17,6 +17,11 @@ h1 {
   font-size: 2em;
 }
 
+p {
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+}
+
 img {
   max-width: 100%;
 }
@@ -32,7 +37,6 @@ header nav ul {
   justify-content: space-between;
 
   padding: 1em;
-  margin: 0 0 1.7em 0;
 }
 
 header nav ul li h1 {
@@ -49,6 +53,16 @@ body {
   background-color: #fef7f8;
 }
 
+/* text above map */
+
+main section:first-of-type ul {
+  margin: 2em;
+}
+
+main section:first-of-type ul li p {
+  color: #9e8e91;
+}
+
 /* map styling */
 
 main section {
@@ -59,4 +73,6 @@ main section {
 #map {
   height: 600px;
   width: 1000px;
+
+  margin: 0 0 5em 0;
 }

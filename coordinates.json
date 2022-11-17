@@ -8,20 +8,19 @@
      "Coordinates": [51.509865, -0.118092]
     },
     {
-     "Breed": "Sphynx",
-     "Coordinates": [62.2270, 105.3809]
+     "Breed": "Persian",
+     "Coordinates": [32.4279, 53.6880]
     },
     {
      "Breed": "Ragdoll",
-     "Coordinates": [38.500000, -98.000000]
+     "Coordinates": [38.500000, -98.000000]       
     },
     {
      "Breed": "Siamese",
      "Coordinates": [15.8700, 100.9925]
     },
     {
-     "Breed": "Persian",
-     "Coordinates": [32.4279, 53.6880]
+     "Breed": "Sphynx",
+     "Coordinates": [62.2270, -105.3809]
     }
-
 ]
