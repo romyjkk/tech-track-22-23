@@ -1,0 +1,11 @@
+[
+        {"category": "The World", "place": 10, "breed": "Sphynx"},
+        {"category": "The World", "place": 9, "breed": "Scottish Fold"},
+        {"category": "The World", "place": 8, "breed": "American Shorthair"},
+        {"category": "The World", "place": 7, "breed": "Abyssinian"},
+        {"category": "The World", "place": 6, "breed": "British Shorthair"},
+        {"category": "The World", "place": 5, "breed": "Devon Rex"},
+        {"category": "The World", "place": 4, "breed": "Persian"},
+        {"category": "The World", "place": 3, "breed": "Exotic shorthair"},
+        {"category": "The World", "place": 2, "breed": "Maine Coon"},
+        {"category": "The World", "place": 1, "breed": "Ragdoll"}]

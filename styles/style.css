@@ -68,6 +68,8 @@ main section:first-of-type ul li p {
 main section {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #map {
@@ -75,4 +77,23 @@ main section {
   width: 1000px;
 
   margin: 0 0 5em 0;
+}
+
+/* bar chart */
+
+.barchart svg {
+  width: 1000px;
+  height: 700px;
+}
+
+#tooltip {
+  position: absolute;
+  background: #fdcbd2;
+  color: #ffffff;
+  font-family: sans-serif;
+  padding: 0.5em;
+  box-shadow: 5px 3px 14px -1px rgba(0, 0, 0, 0.46);
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
 }

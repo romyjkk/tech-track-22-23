@@ -30,16 +30,32 @@
 <body>
   <main>
 
-    <section>
+    <!-- <section>
       <ul>
         <li>
           <p>Waar komen verschillende kattenrassen vandaan?</p>
         </li>
       </ul>
-    </section>
+    </section> -->
 
-    <section>
+    <!-- <section>
       <div id="map"></div>
+    </section> -->
+
+    <section class="barchart">
+      <ul>
+        <li>
+          <p>Wat zijn de meest populaire kattenrassen per werelddeel?</p>
+        </li>
+      </ul>
+      <svg></svg>
+      <div id="tooltip"></div>
+      <button>The World</button>
+      <button>Europe</button>
+      <!-- <svg width="400" height="800">
+        <g id="bars"></g>
+        <g id="labels"></g>
+      </svg> -->
     </section>
 
   </main>
@@ -48,6 +64,7 @@
   <script type="module" src="./scripts/sounds.js"></script>
   <script type="module" src="./scripts/animate.js"></script>
 
+  <script src="https://unpkg.com/topojson@3"></script>
   <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>

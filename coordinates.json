@@ -6,7 +6,7 @@
           "coordinates": [9.005401, 38.763611]
         },
         "properties": {
-          "name": "Abyssinian"
+          "name": "The Abyssinian"
         }
       },
       {
@@ -16,7 +16,7 @@
           "coordinates": [51.509865, -0.118092]
         },
         "properties": {
-          "name": "British Shorthair"
+          "name": "The British Shorthair"
         }
       },
       {
@@ -26,7 +26,7 @@
           "coordinates": [32.4279, 53.6880]
         },
         "properties": {
-          "name": "Persian"
+          "name": "The Persian"
         }
       },
       {
@@ -36,7 +36,7 @@
           "coordinates": [38.500000, -98.000000]
         },
         "properties": {
-          "name": "Ragdoll"
+          "name": "The Ragdoll"
         }
       },
       {
@@ -46,7 +46,7 @@
           "coordinates": [15.8700, 100.9925]
         },
         "properties": {
-          "name": "Siamese"
+          "name": "The Siamese"
         }
       },
       {
@@ -56,7 +56,7 @@
           "coordinates": [62.2270, -105.3809]
         },
         "properties": {
-          "name": "Sphynx"
+          "name": "The Sphynx"
         }
       }
     ]
