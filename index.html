@@ -30,13 +30,13 @@
 <body>
   <main>
 
-    <!-- <section>
+    <section>
       <ul>
         <li>
           <p>Waar komen verschillende kattenrassen vandaan?</p>
         </li>
       </ul>
-    </section> -->
+    </section>
 
     <section>
       <div id="map"></div>
@@ -50,8 +50,13 @@
       </ul>
       <svg></svg>
       <div id="tooltip"></div>
-      <button>The World</button>
-      <button>Europe</button>
+      <ul class="buttons">
+        <li><button value="The World">The World</button></li>
+        <li><button value="Europe">Europe</button></li>
+        <li><button value="United States">United States</button></li>
+        <li><button value="Japan">Japan</button></li>
+        <li><button value="Australia">Australia</button></li>
+      </ul>
       <!-- <svg width="400" height="800">
         <g id="bars"></g>
         <g id="labels"></g>
@@ -61,6 +66,7 @@
   </main>
 
   <script type="module" src="./scripts/main.js"></script>
+  <script type="module" src="./scripts/map.js"></script>
   <script type="module" src="./scripts/sounds.js"></script>
   <script type="module" src="./scripts/animate.js"></script>
 

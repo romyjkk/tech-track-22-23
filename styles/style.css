@@ -59,7 +59,7 @@ main section:first-of-type ul {
   margin: 2em;
 }
 
-main section:first-of-type ul li p {
+p {
   color: #9e8e91;
 }
 
@@ -96,4 +96,9 @@ main section {
   border-radius: 5px;
   opacity: 0;
   pointer-events: none;
+}
+
+ul.buttons {
+  display: flex;
+  flex-direction: row;
 }
