@@ -52,7 +52,7 @@ function getData(filterFunction) {
 
 function makeChart(catPopularity) {
 
-    console.log('werkt dit uberhaupt')
+    // console.log('werkt dit uberhaupt')
 
     const margin = 60;
     const width = 1000 - 2 * margin;
@@ -88,7 +88,7 @@ function makeChart(catPopularity) {
         .attr("y", (d) => yScale(d.place))
         .attr("height", (d) => height - yScale(d.place))
         .attr("width", xScale.bandwidth())
-        .attr("fill", '#fdcbd2')
+        // .attr("fill", (d) => `url(#${d.image})`)
             .on("mouseover touchstart", (e, d) =>
             d3
                 .select("#tooltip")

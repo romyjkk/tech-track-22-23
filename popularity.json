@@ -1,5 +1,5 @@
 [       
-        {"category": "The World", "place": 10, "breed": "Sphynx", "image": "images/png/sphynx.png"},
+        {"category": "The World", "place": 10, "breed": "Sphynx", "image": "Sphynx"},
         {"category": "The World", "place": 9, "breed": "Scottish Fold"},
         {"category": "The World", "place": 8, "breed": "American Shorthair"},
         {"category": "The World", "place": 7, "breed": "Abyssinian"},
