@@ -80,6 +80,7 @@ function makeChart(catPopularity) {
         .attr("y", (d) => yScale(d.place))
         .attr("height", (d) => height - yScale(d.place))
         .attr("width", xScale.bandwidth())
+        .style("overflow", "visible")
         // .transition()
         // .duration(500)
         .attr("fill", (d) => `url(#${d.image})`)

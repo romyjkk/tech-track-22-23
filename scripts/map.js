@@ -27,7 +27,7 @@ function makeMap(allCats) {
 
     function makeMarker() {
         allCats.forEach(allCats => {
-            L.marker(allCats.geometry.coordinates).addTo(map).bindPopup(allCats.properties.name)
+            L.marker(allCats.geometry.coordinates, {icon:mapIcon}).addTo(map).bindPopup(allCats.properties.name)
         });
     }
     makeMarker();
@@ -35,6 +35,14 @@ function makeMap(allCats) {
     }
 
      // custom icons
+
+     let mapIcon = L.icon({
+        iconUrl: '../images/mapcat.png',
+
+        iconSize: [50, 60],
+        iconAnchor: [15, 50],
+        popupAnchor: [5, -50]
+     })
 
 // let abyssinianIcon = L.icon({
 //     iconUrl: '../images/png/abyssinian.png',
