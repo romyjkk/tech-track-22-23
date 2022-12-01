@@ -37,7 +37,7 @@ function makeMap(allCats) {
      // custom icons
 
      let mapIcon = L.icon({
-        iconUrl: '../images/mapcat.png',
+        iconUrl: '../mapcat.png',
 
         iconSize: [35, 40],
         iconAnchor: [15, 30],
