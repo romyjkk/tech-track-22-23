@@ -15,34 +15,134 @@
     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 </head>
 
-<header>
-  <nav>
-    <ul>
-      <li class="title">
-        <h1>Cat Map</h1>
-      </li>
-
-      <li class="cartooncat"><img src="./images/cartooncat.webp" alt="Cartoon kitty"></li>
-    </ul>
-  </nav>
-</header>
-
 <body>
   <main>
 
-    <section>
+    <!-- <section class="curtains">
       <ul>
         <li>
-          <p>Waar komen verschillende kattenrassen vandaan?</p>
+          <h1>Heb jij je altijd al afgevraagd waar je favoriete kattenras vandaan komt?</h1>
+        </li>
+        <li><a class="curtainbutton">Klik hier voor het antwoord!</a></li>
+      </ul>
+      <ul>
+        <li class="curtain1"><img src="images/curtain1.png" alt="Curtain"></li>
+        <li class="curtain2"><img src="images/curtain2.png" alt="Another curtain"></li>
+      </ul>
+    </section> -->
+
+    <!-- first section-->
+    <section>
+      <ul>
+        <li class="animateintro1">
+          <h1>Welkom op dé plek voor kattenliefhebbers!</h1>
+        </li>
+        <li class="animateintro2">
+          <h2>Heb jij je altijd al afgevraagd waar je favoriete kattenras vandaan komt? Of welke kattensoort het
+            populairst is?</h2>
+        </li>
+      </ul>
+
+      <ul>
+        <li><img class="animateintro3" src="images/cartooncat.webp"></li>
+      </ul>
+
+      <ul>
+        <li class="animateintro4">
+          <p>Scroll to find out!</p>
         </li>
       </ul>
     </section>
 
+    <!-- second section-->
     <section>
+      <ul>
+        <li>
+          <p class="fadein">Zoom in en klik op de icoontjes voor meer informatie!</p>
+        </li>
+      </ul>
       <div id="map"></div>
+      <ul>
+        <li>
+          <p>Scroll voor feitjes!</p>
+        </li>
+      </ul>
     </section>
 
+    <!-- third section -->
+    <section>
+      <article class="grid">
+        <ul>
+          <li>
+            <img src="images/pusheen1.png" alt="Pusheen blushing">
+          </li>
+          <li>
+            <h3>Wist je dat...</h3>
+            <p>Katten de enige zoogdieren zijn die zoetigheid niet kunnen proeven?</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <img src="images/pusheen2.png" alt="Pusheen eating a donut">
+          </li>
+          <li>
+            <h3>Wist je dat...</h3>
+            <p>Katten 6 keer hun eigen lengte kunnen springen?</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <img src="images/pusheen3.png" alt="Pusheen eating noodles">
+          </li>
+          <li>
+            <h3>Wist je dat...</h3>
+            <p>Katten ook snorharen hebben achter hun voorpoten?</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <img src="images/pusheen4.png" alt="Pusheen wearing sunglasses">
+          </li>
+          <li>
+            <h3>Wist je dat...</h3>
+            <p>Katten onsmakelijk eten laten staan tot ze verhongeren?</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <img src="images/pusheen5.png" alt="Pusheen eating sushi">
+          </li>
+          <li>
+            <h3>Wist je dat...</h3>
+            <p>Katten zich een derde van de tijd waarin ze wakker zijn wassen?</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <img src="images/pusheen6.png" alt="">
+          </li>
+          <li>
+            <h3>Wist je dat...</h3>
+            <p>Katten lactose intolerant zijn?</p>
+          </li>
+        </ul>
+      </article>
+
+      <ul class="scroll">
+        <li>
+          <p>Scroll om er achter te komen wat de meest populaire kattenrassen zijn!</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- fourth section -->
     <section class="barchart">
+
       <ul>
         <li>
           <p>Wat zijn de meest populaire kattenrassen per werelddeel?</p>
@@ -236,20 +336,24 @@
 
         </defs>
       </svg>
+
+
       <div id="tooltip"></div>
+
       <ul class="buttons">
-        <li><button value="The World">The World</button></li>
-        <li><button value="Europe">Europe</button></li>
-        <li><button value="United States">United States</button></li>
+        <li><button value="De hele wereld">De hele wereld</button></li>
+        <li><button value="Europa">Europa</button></li>
+        <li><button value="De Verenigde Staten">De Verenigde Staten</button></li>
         <li><button value="Japan">Japan</button></li>
-        <li><button value="Australia">Australia</button></li>
+        <li><button value="Australië">Australië</button></li>
       </ul>
+
+
       <!-- <svg width="400" height="800">
         <g id="bars"></g>
         <g id="labels"></g>
       </svg> -->
     </section>
-
   </main>
 
   <script type="module" src="./scripts/main.js"></script>

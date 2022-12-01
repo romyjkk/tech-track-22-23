@@ -3,6 +3,7 @@
 }
 
 body {
+  width: 100vw;
   background: white;
   font-family: sans-serif;
 }
@@ -17,6 +18,11 @@ h1 {
   font-size: 2em;
 }
 
+h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+}
+
 p {
   font-family: 'Caveat', cursive;
   font-size: 2em;
@@ -26,36 +32,162 @@ img {
   max-width: 100%;
 }
 
-/* header styling */
+/* first section */
 
-header {
-  background-color: #fdcbd2;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 1em;
-}
-
-header nav ul li h1 {
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
   color: #ffffff;
-  text-shadow: 2px 2px#bfadb0;
 }
 
-header nav ul li img {
-  width: 4em;
-  height: auto;
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+  color: #ffffff;
 }
 
-body {
-  background-color: #fef7f8;
+main section:first-of-type p {
+  color: #ffffff;
+}
+
+main section:first-of-type {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main section:first-of-type ul li {
+  margin: 1em;
+}
+
+main section:first-of-type ul:first-of-type {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+main section:first-of-type ul:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+}
+
+main section:first-of-type ul:nth-of-type(2) li {
+  width: 20%;
+}
+
+/* animate cartoon cat on hover */
+
+main section:first-of-type ul:nth-of-type(2) img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+/* source: https://www.w3schools.com/howto/howto_css_shake_image.asp */
+
+@keyframes shake {
+  0% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-2px, -3px) rotate(-2deg);
+  }
+
+  20% {
+    transform: translate(-4px, 0px) rotate(2deg);
+  }
+
+  30% {
+    transform: translate(4px, 3px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-2px, 3px) rotate(-2deg);
+  }
+
+  60% {
+    transform: translate(-4px, 2px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(4px, 2px) rotate(-2deg);
+  }
+
+  80% {
+    transform: translate(-2px, -2px) rotate(2deg);
+  }
+
+  90% {
+    transform: translate(2px, 3px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(2px, -3px) rotate(-2deg);
+  }
+}
+
+/* section colors */
+
+main section:first-of-type {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main section:nth-of-type(2) {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main section:nth-of-type(3) {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main section:nth-of-type(4) {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main section:first-of-type {
+  background-color: #dbcacc;
+}
+
+main section:nth-of-type(2) {
+  background-color: #ffe5e8;
+}
+
+main section:nth-of-type(3) {
+  background-color: #f7c9cf;
+}
+
+main section:nth-of-type(4) {
+  background-color: #dfcbce;
+}
+
+/* scroll snap: https://www.youtube.com/watch?v=MsmvhpBXosM */
+
+main {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
 }
 
 /* text above map */
 
-main section:first-of-type ul {
+main section:nth-of-type(2) ul {
   margin: 2em;
 }
 
@@ -75,15 +207,79 @@ main section {
 #map {
   height: 600px;
   width: 1000px;
+}
 
-  margin: 0 0 5em 0;
+/* facts! */
+
+main section:nth-of-type(3) {
+  display: flex;
+
+}
+
+main section article.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+main section article.grid ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1em;
+  background-color: white;
+  border-radius: 30px;
+
+  width: 25em;
+
+  transition: 1s;
+
+  box-shadow: 5px 3px 14px -1px #9e8e91;
+}
+
+main section article.grid ul:hover {
+  transform: scale(1.1);
+}
+
+main section article.grid ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+main section article.grid ul li:nth-of-type(2) {
+  margin-left: 1em;
+  width: 40%;
+}
+
+main section article.grid ul li img {
+  padding: 0 0 .5em 0;
+  height: 10em;
+  width: auto;
+}
+
+main section article.grid ul li p {
+  font-size: 1.2em;
+}
+
+main section:nth-of-type(3) ul.scroll {
+  margin: 5em 0 0 0;
 }
 
 /* bar chart */
 
+main section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+}
+
+main section:nth-of-type(4) ul:first-of-type {
+  margin: 2em 0 0 0;
+}
+
 .barchart svg {
+  position: relative;
   width: 100%;
-  height: 700px;
+  height: 550px;
 }
 
 #tooltip {
@@ -98,7 +294,56 @@ main section {
   pointer-events: none;
 }
 
+text {
+  font-family: "Caveat";
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#title {
+  color: #9e8e91;
+}
+
+/* bar chart buttons */
+
 ul.buttons {
   display: flex;
   flex-direction: row;
+  margin: 0 0 3em 0;
+}
+
+/* main section:nth-of-type(2) {
+  padding: 2em 0 2em 0;
+} */
+
+main section ul.buttons {
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+
+}
+
+main section ul.buttons li button {
+  border: none;
+  background-color: #9e8e91;
+  padding: .5em 1em .5em 1em;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px #968f90;
+
+  font-family: 'Caveat', cursive;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+
+  cursor: pointer;
+  transition: 1s;
+}
+
+main section ul.buttons li button:hover {
+  box-shadow: 0px 0px 20px 5px #968f90;
+  scale: 0.9;
+}
+
+main section ul.buttons li button:active {
+  box-shadow: 0px 0px 20px 10px #968f90;
 }

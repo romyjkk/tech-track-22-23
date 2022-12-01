@@ -31,7 +31,7 @@ function getData(filterFunction) {
 
     const margin = 50;
     const width = screen.width - 2 * margin;
-    const height = 600 - 2 * margin;
+    const height = 500 - 2 * margin;
 
     const svg = d3.select(".barchart svg");
 
@@ -47,10 +47,12 @@ function initChart() {
 
     svg.append("text")
         .attr("x", width / 2 + margin)
-        .attr("y", 600)
+        .attr("y", 500)
         .attr("text-anchor", "middle")
         .text("Cat Breeds")
         .attr("id", "title")
+        .attr("font-family", "Caveat")
+        .style("font-weight", 500)
 }
 
 function makeChart(catPopularity) {
@@ -104,12 +106,13 @@ function makeChart(catPopularity) {
 
         d3.select("#title")
             .text(catPopularity[0].category)
+            .style("color", "#9e8e91")
 }
 
 window.addEventListener("DOMContentLoaded", (e) => {
     d3.selectAll("button").on("click", (e) =>
     getData(e.target.value));
-    getData("The World");
+    getData("De hele wereld");
 });
 
 initChart();
