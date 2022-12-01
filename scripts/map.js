@@ -39,9 +39,9 @@ function makeMap(allCats) {
      let mapIcon = L.icon({
         iconUrl: '../images/mapcat.png',
 
-        iconSize: [50, 60],
-        iconAnchor: [15, 50],
-        popupAnchor: [5, -50]
+        iconSize: [35, 40],
+        iconAnchor: [15, 30],
+        popupAnchor: [-2, -30]
      })
 
 // let abyssinianIcon = L.icon({
