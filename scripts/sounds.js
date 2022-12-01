@@ -1,6 +1,6 @@
 // variables
 
-const meow = new Audio('sound/meow.mp3');
+const meow = new Audio('../meow.mp3');
 const playMeow = document.querySelector('.animateintro3');
 
 // meow sound on cartoon cat
