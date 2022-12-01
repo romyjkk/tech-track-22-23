@@ -7,13 +7,6 @@ import '../styles/style.css'
 
 import * as d3 from 'd3';
 
-// importing json file using d3
-
-// d3.json("../coordinates.json").then(d => {
-//     makeMap(d)
-//     console.log(d)
-// })
-
 function getData(filterFunction) {
     d3.json("../popularity.json").then(d => {
 
@@ -43,7 +36,6 @@ function initChart() {
     chart.append("g")
     .attr("transform", `translate(0, ${height})`)
     .attr("id", "xScale")
-    // .call(d3.axisBottom(xScale))
 
     svg.append("text")
         .attr("x", width / 2 + margin)
@@ -57,12 +49,6 @@ function initChart() {
 
 function makeChart(catPopularity) {
     const yScale = d3.scaleLinear()
-        // .range([height, 0])
-        // .domain([0, 10]);
-
-        // chart.append('g')
-        // .call(d3.axisLeft(yScale));
-
 
     const xScale = d3.scaleBand()
         .range([0, width])
@@ -72,7 +58,6 @@ function makeChart(catPopularity) {
         const chart = d3.select("#container");
 
     chart.select("#xScale")
-        // .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(xScale))
 
     chart.selectAll("rect")
@@ -90,7 +75,7 @@ function makeChart(catPopularity) {
             d3
                 .select("#tooltip")
                 .transition()
-                .duration(200)
+                .duration(300)
                 .style("opacity", 1)
                 .text(`${d.breed}`)
                 )
